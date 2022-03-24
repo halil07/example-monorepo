@@ -1,6 +1,6 @@
-# Turborepo Design System starter
+# Turborepo monorepo template starter
 
-This is an official React design system starter powered by Turborepo.
+This is an official React monorepo template starter powered by Turborepo.
 
 ## What's inside?
 
@@ -29,10 +29,10 @@ This turborepo has some additional tools already setup for you:
 We do not have a starter yet in `create-turbo` for this quite yet. If you want to use this in the interim, you run the following command:
 
 ```sh
-npx degit vercel/turborepo/examples/design-system design-system
-cd design-system
-yarn install
-git init . && git add . && git commit -m "Init"
+npx degit halil07/example-monorepo my-mono-repo
+cd my-mono-repo
+yarn
+yarn dev
 ```
 
 ### Changing the NPM organization scope
@@ -42,21 +42,3 @@ The NPM organization scope for this design system starter is `@halil07`. To chan
 - Rename folders in `packages/*` to replace `halil07` with your desired scope
 - Search and replace `halil07` with your desired scope
 - Re-run `yarn install`
-
-### Publishing packages
-
-#### NPM
-
-If you want to publish package to the public NPM registry and make them publicly available, this is already setup for you.
-
-To publish packages to a private NPM organization scope, **remove** the following from each of the `package.json`'s
-
-```diff
-- "publishConfig": {
--  "access": "public"
-- },
-```
-
-#### GitHub Package Registry
-
-See [Working with the npm registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#publishing-a-package-using-publishconfig-in-the-packagejson-file)
